@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключение файла стилей CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Список дел</title>
+</head>
+
+<body>
+    <h1>Список дел</h1>
+    <input type="text" id="task" placeholder="Добавить новое дело">
+    <button id="add-button">Добавить</button>
+    <ul id="todo-list">
+    </ul>
+
+
+    <!-- Модальное окно -->
+    <div id="window" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- <!—Заголовок окна -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Заголовок</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;</button>
+                </div>
+                <!-- <!—Содержание окна -->
+                <div class="modal-body">
+                    <p>Удалить выбранную задачу?</p>
+                </div>
+                <!-- <!—подвал окна -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" datadismiss="modal" id="del"> Удалить</button>
+                        Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Кнопка для открытия модального окна -->
+
+
+
+    <!-- Подключение файла JavaScript с jQuery -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
